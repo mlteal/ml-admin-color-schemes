@@ -1,0 +1,54 @@
+$lime-green: #ACED5B;
+$hot-pink: #eb118c;
+$terra-cotta: #FF6666;
+$cornflower-blue: #5B73ED;
+
+$base-color: #101C2C;
+$highlight-color: #3BCDB7;
+$notification-color: #5B73ED;
+$action-color: $terra-cotta;
+
+$text-color: #fff;
+$base-color: #222;
+$icon-color: hsl( hue( $base-color ), 7%, 95% );
+
+$link: $cornflower-blue;
+$link-focus: lighten( $link, 10% );
+
+$button-color: $action-color;
+$form-checked: $highlight-color;
+
+$menu-text: $text-color;
+$menu-icon: $icon-color;
+$menu-background: $base-color;
+
+$menu-highlight-text: $text-color;
+$menu-highlight-icon: $text-color;
+$menu-highlight-background: $highlight-color;
+
+$menu-current-text: $menu-highlight-text;
+$menu-current-icon: $menu-highlight-icon;
+$menu-current-background: $menu-highlight-background;
+
+$menu-submenu-text: mix( $base-color, $text-color, 30% );
+$menu-submenu-background: #101010;
+$menu-submenu-toplevel-background: rgba( 10,10,10,.3);
+$menu-submenu-background-alt: desaturate( lighten( $menu-background, 7% ), 7% );
+
+$menu-bubble-text: $text-color;
+$menu-bubble-background: $notification-color;
+$menu-bubble-current-text: $text-color;
+$menu-bubble-current-background: $menu-submenu-background;
+
+@import "../admin";
+
+#adminmenu, #adminmenuwrap {
+	background: transparent;
+}
+
+#wpadminbar,
+#adminmenuback {
+	background-color: #0f1218;
+	background: linear-gradient(45deg, #242424 50%, #212121 50%);
+	background-size: 20px 20px;
+}

@@ -1,0 +1,121 @@
+$red: #e63e48;
+$purple: #7883bc;
+$blue: #67b4e3;
+$orange: #FFBE68;
+$white: #f3f3ec;
+$grey: #43444a;
+
+$base-color: $red;
+$highlight-color: $blue;
+$notification-color: $orange;
+$action-color: $purple;
+
+$text-color: #fff;
+$icon-color: hsl( hue( $base-color ), 7%, 95% );
+
+$link: $red;
+$link-focus: lighten( $link, 10% );
+
+$button-color: $action-color;
+$form-checked: $highlight-color;
+
+$menu-text: $text-color;
+$menu-icon: $icon-color;
+$menu-background: $base-color;
+
+$menu-highlight-text: $text-color;
+$menu-highlight-icon: $text-color;
+$menu-highlight-background: $highlight-color;
+
+$menu-current-text: $menu-highlight-text;
+$menu-current-icon: $menu-highlight-icon;
+$menu-current-background: $menu-highlight-background;
+
+$menu-submenu-text: $white;
+$menu-submenu-background: darken($highlight-color, 10%);
+$menu-submenu-toplevel-background: $red;
+$menu-submenu-focus-text: darken($white, 15%);
+
+$menu-submenu-background-alt: desaturate( lighten( $menu-background, 7% ), 7% );
+
+$menu-bubble-text: $text-color;
+$menu-bubble-background: $notification-color;
+$menu-bubble-current-text: $text-color;
+$menu-bubble-current-background: $menu-submenu-background;
+
+@import "../admin";
+
+#adminmenu {
+	background: $base-color;
+	margin-top: 0;
+	padding-top: 12px;
+
+	#collapse-button {
+		background: $blue;
+	}
+}
+
+#adminmenuwrap {
+	background: transparent;
+}
+
+$color1: rgba(231, 0, 8, 0.50); // originally lg grey/blueish stripe
+$transparent-stripe: hsla(4, 100%, 76%, 0); // originally med grey stripes
+$color2: rgba(2, 140, 255, 0.50);
+$color3: rgba(244, 147, 72, 0.50);
+
+#wpadminbar,
+#adminmenuback {
+	background-color: $white;
+	background-image:
+	repeating-linear-gradient(
+			45deg, transparent 5px,
+			$color1 5px,
+			$color1 10px,
+			$transparent-stripe 10px, // blank stripe block
+			$transparent-stripe 30px, // blank stripe block
+			$color2 30px,
+			$color2 40px,
+			$color1 40px,
+			$color1 50px,
+			$transparent-stripe 50px,
+			$transparent-stripe 60px,
+			$color2 60px,
+			$color2 70px,
+			$color3 70px,
+			$color3 75px,
+			$transparent-stripe 75px,
+			$transparent-stripe 90px,
+			$color2 90px,
+			$color2 110px,
+			$transparent-stripe 110px,
+			$transparent-stripe 120px,
+			$color1 120px,
+			$color1 140px
+	),
+	repeating-linear-gradient(
+			135deg, transparent 5px,
+			$color1 5px,
+			$color1 10px,
+			$transparent-stripe 10px,
+			$transparent-stripe 35px,
+			$color2 35px,
+			$color2 40px,
+			$color1 40px,
+			$color1 50px,
+			$transparent-stripe 50px,
+			$transparent-stripe 60px,
+			$color2 60px,
+			$color2 70px,
+			$color3 70px,
+			$color3 80px,
+			$transparent-stripe 80px,
+			$transparent-stripe 90px,
+			$color2 90px,
+			$color2 110px,
+			$transparent-stripe 110px,
+			$transparent-stripe 140px,
+			$color1 140px,
+			$color1 160px
+	);
+}
