@@ -56,14 +56,14 @@ class ML_Color_Schemes {
 
 		wp_admin_css_color(
 			'em-ell', __( 'Em Ell', 'ml_admin_schemes' ),
-			plugins_url( "em-ell/colors$suffix.css", __FILE__ ),
+			plugins_url( 'em-ell/colors' . $suffix . '.css', __FILE__ ),
 			array( '#222222', '#3BCDB7', '#5B73ED', '#FF6666' ),
 			array( 'base' => '#f1f2f3', 'focus' => '#fff', 'current' => '#fff' )
 		);
 
 		wp_admin_css_color(
 			'plaid-shirt', __( 'Plaid Shirt', 'ml_admin_schemes' ),
-			plugins_url( "plaid-shirt/colors$suffix.css", __FILE__ ),
+			plugins_url( 'plaid-shirt/colors' . $suffix . '.css', __FILE__ ),
 			array( '#e63e48', '#67b4e3', '#f3f3ec', '#FFBE68' ),
 			array( 'base' => '#f1f2f3', 'focus' => '#fff', 'current' => '#fff' )
 		);
